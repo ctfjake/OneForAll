@@ -214,7 +214,7 @@ def save(name, total, req_data, resp_queue):
 
 
 def bulk_request(domain, req_data, ret=False):
-    logger.log('INFOR', 'Requesting urls in bulk')
+    logger.log('FATAL', 'Requesting urls in bulk')
     resp_queue = Queue()
     urls_queue = Queue()
     task_count = len(req_data)
